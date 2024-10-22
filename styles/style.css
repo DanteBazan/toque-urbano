@@ -1,0 +1,323 @@
+/* Tipografia utilizada para esta pagina: Mont */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Seteo de colores */
+:root {
+    --main-color: rgb(235, 230, 230);
+    --header-color: #48e;
+    --header-text-color: #e7e2e2;
+    --decoration-color-: #FFD1BA;
+    --sections-color: #DFFFE2;
+}
+
+body {
+    margin: 0;
+    background: var(--main-color);
+    color: #333;
+    font-family: "Montserrat", serif;
+}
+
+/* Reset de los divs,encabezados */
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section,
+article {
+    margin: 0;
+}
+
+/* Inicio Header */
+
+.header {
+    background: var(--header-color);
+    color: var(--header-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+    position: sticky;
+}
+
+.header h1 {
+    margin: 0;
+    border-bottom: 4px solid var(--header-text-color);
+    color: #d6d2d2;
+}
+
+.navbar {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.header-menu-mobile {
+    display: none;
+}
+
+.header-cart {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links {
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-weight: 500;
+}
+
+/* Fin Header */
+
+
+/* Inicio Main */
+
+/* Inicio Hero */
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    padding: 10rem 1rem;
+    background-image: url(https://media.istockphoto.com/id/1517596916/es/foto/armario-con-diferentes-ropas-en-casa-moderna.jpg?s=2048x2048&w=is&k=20&c=olg9sMAFcswK4j02gQ18UJddV9CRU2AH2IxhKbW9WIA=);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero-info h2 {
+    font-size: 1.7rem;
+    color: var(--header-text-color);
+    text-align: center;
+}
+
+.hero-info p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: justify;
+    max-width: 600PX;
+    color: var(--header-text-color);
+}
+
+.hero-info a {
+    padding: 1rem 2rem;
+    background: var(--header-color);
+    color: #fff;
+    border-radius: .3rem;
+    font-weight: 600;
+    font-family: "Montserrat", serif;
+    transition: outline .1s, color .1s, background .1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-info a:hover {
+    outline: 4px solid #48e;
+    color: #222;
+    background: var(--header-text-color);
+}
+
+
+/* Fin Hero */
+
+
+/* Inicio About */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.container-title-about {
+    display: flex;
+    justify-content: center;
+}
+
+.title-about {
+    margin: 3rem 1rem 1rem 1rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #333;
+    border-bottom: 4px solid var(--header-color);
+}
+
+.about-container-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10rem;
+    padding: 3.5rem 1rem;
+}
+
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.about-description p {
+    max-width: 450px;
+    text-align: justify;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+    color: rgb(66, 65, 65);
+    /* text-shadow: 0 0 9px rgb(143, 142, 142); */
+}
+
+
+.about-image {
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 1rem;
+}
+
+
+/* Fin About */
+
+/* Inicio Productos */
+
+.products {
+    margin-top: 3rem;
+}
+
+.container-product-title {
+    margin: 3rem .5rem .5rem .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.product-title {
+    font-size: 1.7rem;
+    text-align: center;
+    border-bottom: 4px solid var(--header-color);
+}
+
+.category-title {
+    text-align: center;
+    /* background-color: orange; */
+    padding: 1rem .5rem;
+}
+
+.container-button-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: blue; */
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.button-category {
+    border: 0;
+    padding: .9rem 1.7rem;
+    border-radius: .5rem;
+    font-family: "Montserrat", serif;
+    background: var(--header-color);
+    color: var(--header-text-color);
+    transition: outline .1s, background .1s, color.1s;
+    cursor: pointer;
+}
+
+.button-category:hover {
+    outline: 3px solid var(--header-color);
+    background: var(--header-text-color);
+    color: #222;
+}
+
+.button-category-active {
+    background: var(--header-text-color);
+    color: #222;
+    outline: 4px solid var(--header-color);
+}
+
+
+.container-products-align-content {
+    display: flex;
+    justify-content: center;
+}
+
+.container-products {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1600px;
+}
+
+.product {
+    padding: .5rem;
+    background: rgb(229, 227, 227);
+    color: #222;
+    flex-shrink: 1;
+    flex-basis: 1;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.product img {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.product-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-data span {
+    font-weight: bold;
+}
+
+.product button {
+    padding: .9rem 1rem;
+    border: 0;
+    border-radius: 5px;
+    background: var(--header-color);
+    color: var(--header-text-color);
+    transition: outline .1s, color .1s, background .5s;
+    cursor: pointer;
+}
+
+.product button:hover {
+    outline: 5px solid #48e;
+    color: #222;
+    background: var(--header-text-color);
+}
+
+/* Fin Productos */
+
+/* Inicio Contacto */
+
+
+
+/* Fin Contacto */
+
+
+/* Fin Main */
